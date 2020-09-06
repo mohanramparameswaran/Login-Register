@@ -1,0 +1,17 @@
+import React from 'react';
+
+import {View, StyleSheet, TouchableOpacity, Text} from 'react-native';
+
+import Icon from 'react-native-ionicons';
+
+export default function IconButton({name, style, onPress}) {
+  return (
+    <TouchableOpacity style={[styles.container, style]} onPress={onPress}>
+      <Icon name={name} color={'purple'} />
+    </TouchableOpacity>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {},
+});
